@@ -62,6 +62,7 @@ const MatrixTable = ({
 
   return (
     <div className={styles.matrix_table}>
+      <div>
       {matrix.map((row, index) => {
         const sum = calculateRowSum(row).toFixed(0);
         return (
@@ -103,7 +104,8 @@ const MatrixTable = ({
       <button className={styles.ui_button} onClick={onAddRow}>
         Add row
       </button>
-    </div>
+        </div>
+      </div>
   );
 };
 
